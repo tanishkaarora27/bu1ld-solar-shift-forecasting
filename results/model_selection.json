@@ -1,0 +1,30 @@
+{
+  "rule": "Hyperparameters and any later model/feature/stopping choice are selected ONLY by lowest mean MAE on the validation sites. Held-out sites are never used for fitting, scaling, tuning, feature selection or early stopping. Ties go to the simpler model.",
+  "selected_alpha": 0.01,
+  "grid": [
+    {
+      "alpha": 0.01,
+      "val_mean_MAE": 0.6345817303588914
+    },
+    {
+      "alpha": 0.1,
+      "val_mean_MAE": 0.6345839842024663
+    },
+    {
+      "alpha": 1,
+      "val_mean_MAE": 0.6346061581868692
+    },
+    {
+      "alpha": 10,
+      "val_mean_MAE": 0.6348103450539658
+    },
+    {
+      "alpha": 100,
+      "val_mean_MAE": 0.6364204640866108
+    },
+    {
+      "alpha": 1000,
+      "val_mean_MAE": 0.6509662662794214
+    }
+  ]
+}

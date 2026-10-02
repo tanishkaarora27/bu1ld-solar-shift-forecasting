@@ -1,0 +1,141 @@
+{
+  "fetched_on": "2026-10-02",
+  "contract_version": "1.0",
+  "files": {
+    "Delhi": {
+      "split": "train",
+      "lat": 28.61,
+      "lon": 77.21,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "ca5ded2214b04696e6750d44274f4be599f4f237d96c5e698bf4c0654e6f605e",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=77.21&latitude=28.61&start=20180101&end=20231231&format=JSON"
+    },
+    "Jaipur": {
+      "split": "train",
+      "lat": 26.91,
+      "lon": 75.79,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "cd404e3ebf624752c5431d32b9bddd9128ecf549ca6abe337d40d7612c3a83dd",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=75.79&latitude=26.91&start=20180101&end=20231231&format=JSON"
+    },
+    "Mumbai": {
+      "split": "train",
+      "lat": 19.08,
+      "lon": 72.88,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "7a57bd3bff3f47e4e59147a4cb55d498a4cca4f07cd15ccd9e451827a4d57417",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=72.88&latitude=19.08&start=20180101&end=20231231&format=JSON"
+    },
+    "Bengaluru": {
+      "split": "train",
+      "lat": 12.97,
+      "lon": 77.59,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "1a0046cd99e5d88ae876fe5ebe1cde5a2ea2607cd85a5964b21d5103f97f9039",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=77.59&latitude=12.97&start=20180101&end=20231231&format=JSON"
+    },
+    "Hyderabad": {
+      "split": "train",
+      "lat": 17.39,
+      "lon": 78.49,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "d018c575e6967fb5c4b5f058668c6c00783d23e2fe250284bd8b09e9256d0efa",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=78.49&latitude=17.39&start=20180101&end=20231231&format=JSON"
+    },
+    "Ahmedabad": {
+      "split": "train",
+      "lat": 23.02,
+      "lon": 72.57,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "23ce18a7d55d45c6b7c2ddec8a9082bdfd07d7c17a44e7596ba8bf125ef2fffa",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=72.57&latitude=23.02&start=20180101&end=20231231&format=JSON"
+    },
+    "Pune": {
+      "split": "train",
+      "lat": 18.52,
+      "lon": 73.86,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "71d565fa8f563b0bad570fded95a5d03280668fc51eafd91f977329385b64e21",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=73.86&latitude=18.52&start=20180101&end=20231231&format=JSON"
+    },
+    "Lucknow": {
+      "split": "train",
+      "lat": 26.85,
+      "lon": 80.95,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "f30dd67c278349a403ec2f0ca74108ca46838c56441f6f7a9b8a8e19d0cc77f1",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=80.95&latitude=26.85&start=20180101&end=20231231&format=JSON"
+    },
+    "Chennai": {
+      "split": "validation",
+      "lat": 13.08,
+      "lon": 80.27,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "df9952b9fe2e4341972b9f76d163af86b1eb776c1b55bfa16370826585960846",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=80.27&latitude=13.08&start=20180101&end=20231231&format=JSON"
+    },
+    "Bhopal": {
+      "split": "validation",
+      "lat": 23.26,
+      "lon": 77.41,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "e108d9b9114609034c7e78627058de14a9b814c82a01cc8e28c3897fc67ccf17",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=77.41&latitude=23.26&start=20180101&end=20231231&format=JSON"
+    },
+    "Nagpur": {
+      "split": "validation",
+      "lat": 21.15,
+      "lon": 79.09,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "f60e1dde8f4a5714734b2996455250ad14c1d7f06a33ad6e90f75e48a4fd8fbd",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=79.09&latitude=21.15&start=20180101&end=20231231&format=JSON"
+    },
+    "Guwahati": {
+      "split": "heldout",
+      "lat": 26.14,
+      "lon": 91.74,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "dec09b70d13f8914e6c54e8d69817bb88efa5c90b07391107ddb4e846a19b7eb",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=91.74&latitude=26.14&start=20180101&end=20231231&format=JSON"
+    },
+    "Leh": {
+      "split": "heldout",
+      "lat": 34.15,
+      "lon": 77.58,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "23b5269547e51596d1d82b04f123fbf3c6bd90e40b293b66382679750a612562",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=77.58&latitude=34.15&start=20180101&end=20231231&format=JSON"
+    },
+    "Jaisalmer": {
+      "split": "heldout",
+      "lat": 26.92,
+      "lon": 70.91,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "3c703cdf6ad86edf6c48ffee98049d660c3d837edaa12cadd5063f41704864df",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=70.91&latitude=26.92&start=20180101&end=20231231&format=JSON"
+    },
+    "Kochi": {
+      "split": "heldout",
+      "lat": 9.93,
+      "lon": 76.27,
+      "rows": 2191,
+      "missing_cells": 0,
+      "sha256": "cedb0975abd82d5008277135958eab4e767fcef51de721390939253c290f3fd0",
+      "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CT2M%2CRH2M%2CWS2M%2CPRECTOTCORR%2CCLRSKY_SFC_SW_DWN&community=RE&longitude=76.27&latitude=9.93&start=20180101&end=20231231&format=JSON"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+split,model,MAE,RMSE,bias,skill_vs_persistence
+heldout,persistence,0.6779,0.9799,-0.0006,0.0
+heldout,ridge,0.67,0.899,-0.1056,0.0062
+train,persistence,0.5815,0.8558,0.0007,0.0
+train,ridge,0.536,0.7535,0.0,0.0752
+validation,persistence,0.6918,1.0148,-0.0033,0.0
+validation,ridge,0.6346,0.9008,0.0551,0.083
