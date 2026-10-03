@@ -1,0 +1,113 @@
+{
+  "freeze_version": "1.0",
+  "contract_file": "experiment_contract.json (unchanged, commit a1194ca93f718a76a97dbc92b5bb88005f3f15d2)",
+  "model": "sklearn MLPRegressor ensemble (mean of one model per seed), StandardScaler fit on train sites",
+  "inputs": "identical to Ridge: flattened 7-day history of target+covariates + sin/cos day-of-year",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "compute_cap": {
+    "max_iter_epochs_per_fit": 100,
+    "batch_size": 256,
+    "early_stopping": false,
+    "fits_in_selection": 24
+  },
+  "search_grid": {
+    "hidden": [
+      [
+        16
+      ],
+      [
+        32
+      ],
+      [
+        64
+      ],
+      [
+        32,
+        16
+      ]
+    ],
+    "alpha": [
+      0.0001,
+      0.01
+    ]
+  },
+  "selection_rule": "lowest mean validation-site MAE of seed-ensemble; ties (to 1e-6) to fewer units, then fewer layers, then smaller alpha. Held-out never used.",
+  "selection_log": [
+    {
+      "hidden": [
+        16
+      ],
+      "alpha": 0.0001,
+      "val_mean_MAE": 0.6535999571259165
+    },
+    {
+      "hidden": [
+        16
+      ],
+      "alpha": 0.01,
+      "val_mean_MAE": 0.6528373099835564
+    },
+    {
+      "hidden": [
+        32
+      ],
+      "alpha": 0.0001,
+      "val_mean_MAE": 0.6435638589225255
+    },
+    {
+      "hidden": [
+        32
+      ],
+      "alpha": 0.01,
+      "val_mean_MAE": 0.6441250125731436
+    },
+    {
+      "hidden": [
+        64
+      ],
+      "alpha": 0.0001,
+      "val_mean_MAE": 0.6399301813581735
+    },
+    {
+      "hidden": [
+        64
+      ],
+      "alpha": 0.01,
+      "val_mean_MAE": 0.6409575145061642
+    },
+    {
+      "hidden": [
+        32,
+        16
+      ],
+      "alpha": 0.0001,
+      "val_mean_MAE": 0.6337478717429526
+    },
+    {
+      "hidden": [
+        32,
+        16
+      ],
+      "alpha": 0.01,
+      "val_mean_MAE": 0.6343565292605867
+    }
+  ],
+  "selected": {
+    "hidden": [
+      32,
+      16
+    ],
+    "alpha": 0.0001,
+    "val_mean_MAE": 0.6337478717429526
+  },
+  "comparators_fixed": [
+    "persistence",
+    "ridge (alpha=0.01 from baseline commit)"
+  ],
+  "reporting_note": "A null or worse learned-model result is reported as-is in the final artifact.",
+  "heldout_evaluated": false
+}
