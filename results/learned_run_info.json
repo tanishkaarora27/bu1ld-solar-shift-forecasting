@@ -1,0 +1,12 @@
+{
+  "freeze_commit_sha": "caeae740902f72e5225b76ee626a5a9fa0835d27",
+  "selected": {
+    "hidden": [
+      32,
+      16
+    ],
+    "alpha": 0.0001,
+    "val_mean_MAE": 0.6337478717429526
+  },
+  "heldout_scored_after_freeze": true
+}
