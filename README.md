@@ -63,3 +63,11 @@ Held-out, mean across 4 sites (kWh/m^2/day):
 Reading: the MLP's MAE is only about 1% better than Ridge, its RMSE is worse than Ridge, and it overpredicts (bias +0.17). It beats persistence at 3 of 4 held-out sites and Ridge at 1 of 4, so this is a marginal, non-robust result. MAE skill is 0.157 on train sites but 0.015 held-out, so little of the in-sample gain transfers to unseen sites. Fits reached the frozen 100-epoch cap (sklearn ConvergenceWarning); this was left unchanged. Full output: `results/learned_metrics_per_site.csv`, `results/learned_metrics_summary.csv`, `results/learned_run_info.json`, `results/learned_run_log.txt`.
 
 Note: `python -m src.build_data --verify` can report a mismatch on a fresh clone because the committed CSVs use LF line endings while the manifest hashes correspond to CRLF; the data content is identical.
+
+## Correction (October 5, 2026)
+
+The committed per-site metrics at `8e287cb32b125b7e5d913b3165755cf5e5b3a04f` show lower MLP MAE than Ridge at Leh and Jaisalmer (two of four held-out sites), not one of four as stated in the "Learned model: held-out result" section above and in the handoff email. The MLP beats persistence at three of four sites, as originally reported. The stored metric values and the mixed overall interpretation are unchanged: the small mean MAE advantage over Ridge comes with worse RMSE than Ridge and positive bias. The summary `skill_vs_persistence` is the mean of per-site skills, not a ratio computed from the two macro-average MAEs. No model was rerun and nothing was tuned for this correction; the original text above is left as written.
+
+## Data provenance limitation (unresolved)
+
+`python -m src.build_data --verify` fails on a fresh clone of the committed data (manifest mismatch for all 15 sites). The SHA-256 hashes in `data/MANIFEST.json` match the committed CSVs only after converting their LF line endings to CRLF. This is recorded as a provenance limitation, not a pass: byte identity and parsed-content equivalence are different claims, and the "data content is identical" statement above has not been independently verified. The frozen commits were not modified.
